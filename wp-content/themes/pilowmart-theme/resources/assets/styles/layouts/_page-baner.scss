@@ -1,0 +1,22 @@
+.page-baner {
+    height: 35vh;
+    background-color: $cmp-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__content {
+        z-index: 5;
+
+        &__text {
+            text-align: center;
+            
+            &--heading {
+                font-family: $pop;
+                font-size: 6em;
+                font-weight: 600;
+            }
+        }
+    }
+}

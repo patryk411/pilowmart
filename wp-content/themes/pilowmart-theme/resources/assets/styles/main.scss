@@ -1,0 +1,58 @@
+@import "common/variables";
+
+/** Import everything from autoload */
+@import "./autoload/**/*";
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: #fff;
+}
+
+/**
+ * Import npm dependencies
+ *
+ * Prefix your imports with `~` to grab from node_modules/
+ * @see https://github.com/webpack-contrib/sass-loader#imports
+ */
+// @import "~some-node-module";
+
+/** Import theme styles */
+@import "common/global";
+@import "components/buttons";
+@import "components/comments";
+@import "components/forms";
+@import "components/wp-classes";
+@import "layouts/header";
+@import "layouts/sidebar";
+@import "layouts/footer";
+@import "layouts/pages";
+@import "layouts/posts";
+@import "layouts/tinymce";
+@import "layouts/nav";
+@import "layouts/page-baner";
+
+.main {
+    @import "layouts/list-product";
+    @import "layouts/trending-items";
+    @import "layouts/testimonitals";
+    @import "layouts/feature";
+    @import "layouts/subscribe";
+}
+
+@import "layouts/media390";
+@import "layouts/media576";
+@import "layouts/media768";
+@import "layouts/media991";
+@import "layouts/media1520";
+

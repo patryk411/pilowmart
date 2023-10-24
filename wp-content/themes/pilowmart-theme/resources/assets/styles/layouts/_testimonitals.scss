@@ -1,0 +1,89 @@
+&__testimonitals {
+    background-color: $cmp-color;
+    padding: 100px 0;
+    &__content {
+        text-align: center;
+        &__slider {
+
+            &__single-testi {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                
+                &__img {
+                    position: relative;
+                    max-width: 105px;
+                    margin-bottom: 35px;
+                    
+                    i {
+                        position: absolute;
+                        content: "";
+                        right: -8px;
+                        bottom: -10px;
+                        height: 50px;
+                        width: 50px;
+                        background-color: #E4D3DF;
+                        font-size: 14px;
+                        border-radius: 50%;
+                        line-height: 50px;
+                        color: $white;
+                    }
+                }
+                
+                
+                &--text {
+                    font-size: 2.4em;
+                    color: #fff;
+                    font-family: $rubik;
+                    font-weight: 400;
+                }
+                
+                &--heading {
+                    font-size: 1.6em;
+                    margin-top: 25px;
+                    color: #fff;
+                    margin-bottom: 0;
+                }
+            }
+
+        }
+    }
+}
+
+.splide {
+    &__slide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__pagination {
+        display: none;
+    }
+
+    &__arrow {
+        width: 40px;
+        height: 40px;font-size: 1.4em;
+        line-height: 40;
+        border-radius: 50%;
+        border: 1px solid $text-color;
+        color: $text-color;
+        background-color: transparent;
+        transition: background-color .5s;
+
+        svg {
+            font-weight: 200;
+            color: #fff;
+        }
+
+        &:hover {
+            background-color: $text-color;
+
+            svg {
+                color: #fff;
+            }
+        }
+    }
+}

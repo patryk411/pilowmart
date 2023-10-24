@@ -1,0 +1,94 @@
+.content-info {
+    &__content {
+        &__top-side {
+            padding: 120px 0;
+            background-color: #fff;
+            &__footer-nav {
+                display: flex;
+                align-items: center;
+
+                &__brand {
+                    &--brand {
+                        margin-right: 45px;
+                    }
+                }
+
+                &__box {
+                    
+                    &--link,
+                    a {
+                        font-family: $rubik;
+                        font-size: 1.6em;
+                        color: $text-color;
+                        padding: 0 17px;
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            &__footer-icons {
+                display: flex;
+                align-items: center;
+                justify-content: end;
+
+                &--box,
+                a {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 50%;
+                    background-color: $text-color;
+                    margin: 0 5px;
+                    text-decoration: none;
+                    transition: background-color .5s;
+                    
+                    i {
+                        color: #fff;
+                        font-size: 1.4em;
+                    }
+
+                    &:hover {
+                        background-color: #e0cfdb;
+                    }
+                }
+            }
+        }
+
+        &__btm-side {
+            background-color: #f4edf2;
+            padding: 30px 0;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            &__text {
+                &--text {
+                    font-family: $rubik;
+                    line-height: 2;
+                    font-size: 1.5em;
+                    margin-bottom: 0;
+                    color: $text-color;
+                    font-weight: 400;
+                }
+            }
+
+            &__faqs {
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                &--link,
+                a {
+                    font-family: $rubik;
+                    color: $text-color;
+                    margin-left: 40px;
+                    font-size: 1.4em;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

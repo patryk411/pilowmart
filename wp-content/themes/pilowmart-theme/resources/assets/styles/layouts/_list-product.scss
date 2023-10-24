@@ -1,0 +1,83 @@
+&__list-product {
+    
+    &__content {
+        background-color: #fff;
+        padding: 200px 0 100px;
+        
+        &__single-product {
+            margin-bottom: 100px;
+
+            &__item {
+                &__single {
+                    position: relative;
+                    margin: 35px 0 0 35px;
+                    z-index: 10;
+
+                    .product-img {
+                        width: 100%;
+                        height: auto;
+                        z-index: 0;
+                    }
+
+                    .overlay-img {
+                        position: absolute;
+                        left: -35px;
+                        top: -45px;
+                        z-index: -1;
+                    }
+                    
+                    .overlay-img-even {
+                        position: absolute;
+                        left: 120px;
+                        top: -45px;
+                        z-index: -1;
+
+                    }
+                }
+            }
+
+            &__text {
+                &--heading {
+                    color: $cmp-color;
+                    font-size: 2em;
+                    font-family: $pop;
+                }
+
+                &--text {
+                    color: #4b3049;
+                    font-size: 4em;
+                    line-height: 1.5;
+                    font-weight: 500;
+                    margin: 10px 0 50px;
+                }
+
+                .btn {
+                    &--product {
+                        padding: 18px 36px;
+                        border-radius: 5px;
+                        background-color: transparent;
+                        border: 1px solid $cmp-color;
+                        font-size: 1.5em;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                        transition: .5s;
+                        
+                        a {
+                            color: $cmp-color;
+                            text-decoration: none;
+                            transition: color .5s;
+                        }
+                    }
+
+                    &--product:hover {
+                        background-color: $cmp-color;
+                        
+                        a {
+                            color: #fff;
+                          }
+                    }
+                }
+            }
+        }
+    }
+}

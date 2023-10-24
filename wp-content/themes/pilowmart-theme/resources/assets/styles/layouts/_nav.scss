@@ -1,0 +1,29 @@
+.navbar {
+    background-color: #fff;
+    .collapse {
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    color: #4b3049;
+                    font-size: 1.6em;
+                    font-family: $rubik;
+                    text-transform: capitalize;
+                    padding: 35px 21px;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .d-flex {
+            .navbar-icon {
+                text-decoration: none;
+                font-size: 2em;
+                color: $text-color;
+
+                .fa-magnifying-glass {
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
+}

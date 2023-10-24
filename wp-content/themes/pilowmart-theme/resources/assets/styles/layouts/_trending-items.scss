@@ -1,0 +1,43 @@
+&__trending-items {
+    padding: 200px 0 130px;
+    background-color: #f4edf2;
+   &__content {
+        &--heading {
+            font-size: 3.6em;
+            color: $text-color;
+            line-height: 27px;
+            font-family: $pop;
+            font-weight: 700;
+            margin-bottom: 80px;
+            text-align: center;
+            }
+
+            &__single-box {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: center;
+                margin-bottom: 60px;
+
+                &--text {
+                    margin: 22px 0 8px;
+                    a {
+                        color: $text-color;
+                        font-family: $pop;
+                        font-size: 2.4em;
+                        font-weight: 400;
+                        line-height: 1.5;
+                    }
+                }
+
+                &--cost {
+                    font-family: $rubik;
+                    line-height: 2;
+                    margin-bottom: 0px;
+                    color: #795376;
+                    font-size: 2em;
+                    font-weight: 400;
+                }
+        }
+   }
+}

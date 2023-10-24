@@ -1,0 +1,174 @@
+@media (min-width: 991px) {
+    .header {
+        background-color: #fff;
+      
+        
+        &__content {
+          position: relative;
+          display: flex;
+          align-items: center;
+          height: 420px;
+      
+            &__mid-side {
+                margin-top: 70px;
+              &--h1 {
+                font-size: 4em;
+                font-weight: 500;
+                line-height: 78px;
+                margin-bottom: 10px;
+              }
+              
+              &--text {
+                font-size: 2em;
+              }
+            
+              &--btn {
+                padding: 17px 50px;
+                background-color: $cmp-color;
+                border-radius: 5px;
+                border: 2px solid $cmp-color;
+                font-weight: 500;
+                font-size: 1.5em;
+                text-transform: capitalize;
+                
+                a {
+                  color: #fff;
+                  text-decoration: none;
+                  transition: color .5s;
+                }
+                
+              }
+            
+              &--btn:hover {
+                background-color: #fff;
+                
+                a {
+                  color: $text-color;
+                }
+              }
+              color: $text-color;
+            }
+      
+            &__right-img {
+                position: absolute;
+                right: 0;
+                top: 0;
+                max-width: 55%;
+
+                &--img {
+                  max-width: 80%;
+                  height: auto;
+                }
+              
+              &--down-patern {
+                position: absolute;
+                left: -133px;
+                bottom: 0;
+              }
+          }
+      
+          &::after {
+            position: absolute;
+            content: '';
+            left: 0;
+            bottom: 0;
+            background-color: $cmp-color;
+            width: 196px;
+            height: 618px;
+          }
+        }
+      
+    }
+
+    .main {
+        &__list-product {
+    
+            &__content {
+                background-color: #fff;
+                padding: 0px 0 100px;
+                
+                &__single-product {
+                    margin: 0;
+                    padding: 100px 0 60px;
+        
+                    &__item {
+                        &__single {
+                            position: relative;
+                            margin: 35px 0 0 35px;
+                            z-index: 10;
+
+                            img {
+                                max-width: 100%;
+                                height: auto;
+                            }
+        
+                            .product-img {
+                                width: 100%;
+                                height: auto;
+                                z-index: 0;
+                            }
+        
+                            .overlay-img {
+                                position: absolute;
+                                left: -35px;
+                                top: -45px;
+                                z-index: -1;
+                            }
+                            
+                            .overlay-img-even {
+                                position: absolute;
+                                left: 30px;
+                                top: -45px;
+                                z-index: -1;
+        
+                            }
+                        }
+                    }
+        
+                    &__text {
+                        &--heading {
+                            color: $cmp-color;
+                            font-size: 1.6em;
+                            font-family: $pop;
+                        }
+        
+                        &--text {
+                            color: #4b3049;
+                            font-size: 2.5em;
+                            line-height: 1.5;
+                            font-weight: 500;
+                            margin: 10px 0 50px;
+                        }
+        
+                        .btn {
+                            &--product {
+                                padding: 13px 29px;
+                                border-radius: 5px;
+                                background-color: transparent;
+                                border: 1px solid $cmp-color;
+                                font-size: 1.5em;
+                                font-weight: 400;
+                                text-transform: uppercase;
+                                transition: .5s;
+                                
+                                a {
+                                    color: $cmp-color;
+                                    text-decoration: none;
+                                    transition: color .5s;
+                                }
+                            }
+        
+                            &--product:hover {
+                                background-color: $cmp-color;
+                                
+                                a {
+                                    color: #fff;
+                                  }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
